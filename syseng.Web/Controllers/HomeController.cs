@@ -20,9 +20,16 @@ namespace syseng.Web.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Articles()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Your articles page.";
+
+            return View();
+        }
+
+        public ActionResult Article()
+        {
+            ViewBag.Message = "Your article page.";
 
             return View();
         }
