@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/index")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
@@ -100,5 +100,13 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    <script type="text/javascript">
+    $("#button").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#aboutus").offset().top
+        }, 2000);
+    });
+    </script>
 </body>
 </html>
