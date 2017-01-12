@@ -25,6 +25,11 @@ namespace syseng.Web.Models
         {
         }
 
+        public DbSet<Article> Articles { get; set; }
+        public DbSet<Feedback> Feedbacks { get; set; }
+        public DbSet<Project> Projects { get; set; }
+        public DbSet<ProjectType> ProjectTypes { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

@@ -6,17 +6,10 @@ using System.Web.Mvc;
 
 namespace syseng.Web.Controllers
 {
-    public class HomeController : Controller
+    public class ArticleController : Controller
     {
         public ActionResult Index()
         {
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your application contact page.";
-
             return View();
         }
     }
